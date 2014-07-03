@@ -23,3 +23,6 @@ class Coach(models.Model):
   def __unicode__(self):
    return self.school_name +' ' + self.sport
   
+
+  def award_kredit(kredit_earned):
+   self.kredit += int(kredit_earned)
