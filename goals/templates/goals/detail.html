@@ -1,0 +1,8 @@
+<h1>{{ goal.subject }}</h1>
+<h1>Kredit: {{goal.kredit_reward}}</h1>
+<h2>Deadline: {{goal.deadline}}</h2></br>
+<ul>
+{% for subtask in goal.subtask_set.all %}
+  <li>{{subtask.task_text}}</li>
+{% endfor %}
+</ul>
